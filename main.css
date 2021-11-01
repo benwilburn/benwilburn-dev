@@ -1,0 +1,52 @@
+
+@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css");
+
+body {
+  font-family: "Fira Code";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.6;
+  background: #000000;
+  background-size: 300%;
+}
+
+.action-text {
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: -125px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 28px;
+  border-right: solid 3px #fff;
+  animation: animated-text 2s steps(30, end) 1s 1 normal both,
+  animated-cursor 600ms steps(30, end) infinite;
+}
+
+/* text animation */
+@keyframes animated-text {
+  0% {
+    width: 0;
+  }
+
+  to {
+    width: 340px;
+  }
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: #fff,
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
